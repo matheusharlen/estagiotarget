@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    let numero = parseInt(prompt("Digite um inteiro positivo para checar se pertence a sequencia de fibonacci:"));
+    let fibonacci = 0; 
+    let variavelDeTroca1 = 0;
+    let variavelDeTroca2 = 1;
+    while (fibonacci < numero){
+        fibonacci = variavelDeTroca1 + variavelDeTroca2;
+        variavelDeTroca1 = variavelDeTroca2;
+        variavelDeTroca2 = fibonacci;
+    }
+    if (fibonacci == numero){
+        prompt("O número digitado pertence a sequência de fibonacci!");
+    } else {
+        prompt("O número não pertence a sequência de fibonacci!")
+
+    }
+
+</script>
